@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anshul Gupta — Portfolio</title>
+  <meta name="description" content="Anshul Gupta. Data science and engineering portfolio with selected projects, experience, education and documents." />
+  <style>
+    :root{
+      --bg:#000000;
+      --panel:#0e0e0e;
+      --text:#ffffff;
+      --muted:#a9a9a9;
+      --line:#1a1a1a;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Inter,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    a{color:var(--text);text-decoration:underline;text-underline-offset:2px}
+    a:focus-visible,button:focus-visible{outline:2px solid #ffffff;outline-offset:2px;border-radius:8px}
+    .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+    header{padding:56px 0 32px;border-bottom:1px solid var(--line)}
+    .hero{display:grid;gap:18px;grid-template-columns:1fr;align-items:start}
+    @media(min-width:900px){.hero{grid-template-columns:1fr 360px}}
+    .name{font-size:34px;font-weight:800;letter-spacing:-0.02em}
+    .title{margin-top:4px;color:var(--muted)}
+    .intro{margin-top:16px;background:var(--panel);padding:16px;border-radius:14px}
+    .small{font-size:13px;color:var(--muted)}
+    .cta{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+    .btn{display:inline-block;background:#111111;border:1px solid #2a2a2a;color:#ffffff;padding:10px 14px;border-radius:10px;font-weight:600;text-decoration:none}
+    .btn:hover{background:#161616}
+    nav.top{display:flex;gap:14px;align-items:center;margin-top:10px;flex-wrap:wrap}
+    main{padding:28px 0}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:900px){.grid{grid-template-columns:1fr 320px}}
+    .panel{background:var(--panel);padding:18px;border-radius:14px}
+    h2{margin:0 0 12px 0;font-size:18px}
+    .meta{color:var(--muted);font-size:13px}
+    .divider{height:1px;background:var(--line);margin:16px 0}
+    .project{padding:14px;border:1px solid var(--line);border-radius:12px;margin-bottom:14px}
+    .project h3{margin:0 0 6px 0;font-size:16px}
+    ul.plain{margin:6px 0 0 18px;padding:0}
+    ul.plain li{margin:6px 0}
+    .kv{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+    .kv span{font-size:12px;color:var(--muted);padding:4px 8px;border:1px solid var(--line);border-radius:999px}
+    footer{margin:32px 0 48px 0;text-align:center;color:var(--muted);font-size:13px}
+    .contact a{display:inline-block;margin-right:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div>
+          <div class="name">Anshul Gupta</div>
+          <div class="title">Data Scientist · Data Engineer · ML Engineer</div>
+
+          <nav class="top" aria-label="Primary">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#docs">Docs</a>
+            <a href="#contact">Contact</a>
+            <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/Anshul%20Gupta%20Resume%20.pdf" download>Resume</a>
+          </nav>
+
+          <div class="intro">
+            <div class="small">Bristol · <a href="mailto:ans2852000@gmail.com">ans2852000@gmail.com</a> · <a href="tel:+447909452401">+44 790 945 24 01</a></div>
+            <p style="margin:10px 0 0 0">
+              I design reliable data pipelines and interpretable machine-learning solutions that translate research into production. My work combines careful data preparation, clear modelling choices and measurable outcomes. I prefer simple systems that scale and are easy to maintain.
+            </p>
+            <!-- <div class="cta">
+              <a class="btn" href="#projects">See projects</a>
+              <a class="btn" href="https://github.com/07anshul/MyPortfolio/blob/main/docs/Anshul%20Gupta%20Resume%20.pdf" download>Download CV</a>
+            </div> -->
+          </div>
+        </div>
+
+        <aside class="panel" aria-label="Sidebar">
+          <h2>At a glance</h2>
+          <div class="meta">MSc Data Science at the University of Bristol in 2024 to 2025. Data Engineer at Deloitte before that. Focus on NLP, multi-omics analytics and production data workflows.</div>
+          <div class="divider"></div>
+          <h2>Skills</h2>
+          <div class="kv">
+            <span>Python</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>PyTorch</span><span>HuggingFace</span>
+            <span>SQL</span><span>PostgreSQL</span><span>Kafka</span><span>Docker</span><span>AWS</span><span>Jenkins</span>
+          </div>
+          <div class="divider"></div>
+          <!-- <h2>Links</h2>
+          <div class="small">
+            GitHub <a href="https://github.com/07anshul" target="_blank" rel="noopener">07anshul</a> ·
+            LinkedIn <a href="https://www.linkedin.com/in/anshul-g-057ba7190/" target="_blank" rel="noopener">Anshul Gupta</a>
+          </div> -->
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <section>
+          <div class="panel">
+            <h2 id="projects">Selected projects</h2>
+
+            <article class="project">
+              <h3>Automated extraction of polymer properties from research articles</h3>
+              <div class="meta">Jun 2025 to Sep 2025</div>
+              <p>
+                Built an end-to-end information-extraction pipeline for polymers, properties and context from full-text papers. Created two corpora with a unified seven-entity schema and applied a character-aware BiLSTM with CRF after evaluating classical CRF, recurrent and transformer baselines. The system delivered strong span integrity and efficient inference for practical use.
+              </p>
+              <ul class="plain">
+                <li>Constructed a large weak-labelled set and a focused gold set for evaluation and tuning.</li>
+                <li>Selected a recurrent model for precision and speed with clear gains over baselines.</li>
+                <li>Integrated data harvesting, annotation, inference and storage for a deployable workflow.</li>
+              </ul>
+              <div class="kv"><span>Python</span><span>BiLSTM + CRF</span><span>SciBERT benchmarks</span><span>Regex labelling</span></div>
+              <p class="meta">Thesis <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/thesis_PM.pdf">open</a></p>
+            </article>
+
+            <article class="project">
+              <h3>MIR100HG multi-omics stratification</h3>
+              <div class="meta">Jan 2025 to Apr 2025</div>
+              <p>
+                Developed MIR100HG-centred features across five adenocarcinomas and validated prognostic value. The workflow combined data cleaning, outlier handling, PCA and survival analysis. Results showed clear cancer versus normal separation on principal components and significant patient-risk stratification in selected cohorts.
+              </p>
+              <ul class="plain">
+                <li>Reduced a feature space above fifty-six thousand into compact signatures.</li>
+                <li>Validated discrimination with Random Forests and cross-checked with literature.</li>
+                <li>Observed significant survival splits in pancreatic and lung cohorts on selected PCs.</li>
+              </ul>
+              <div class="kv"><span>Python</span><span>PCA</span><span>Cox PH</span><span>Random Forest</span></div>
+              <p class="meta">Report <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/report_MO.pdf">open</a></p>
+            </article>
+
+            <article class="project">
+              <h3>Visual analytics of housing, health and work</h3>
+              <div class="meta">England and Wales · 2011 to 2021</div>
+              <p>
+                Built a reproducible visual-analytics pipeline on census tables to compare overcrowding, self-reported health and unemployment over a decade. Aligned 2011 and 2021 geographies, imputed missing areas with a Bayesian model and produced PCA and t-SNE views with linked dashboards. Findings highlight overall improvements with notable local exceptions and a clear link between unemployment change and health outcomes.
+              </p>
+              <ul class="plain">
+                <li>Prepared an analysis-ready dataset for all local authorities with consistent measures.</li>
+                <li>Published two dashboards for level and change to support rapid screening.</li>
+                <li>Derived policy-relevant insights with transparent methods and clear visuals.</li>
+              </ul>
+              <div class="kv"><span>Python</span><span>PCA</span><span>t-SNE</span><span>Tableau</span></div>
+              <p class="meta">Study <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/report_VA.pdf">open</a></p>
+            </article>
+
+            <div class="divider"></div>
+
+            <h2 id="experience">Experience</h2>
+            <article class="project">
+              <h3>Data Engineer · Deloitte · Bengaluru</h3>
+              <div class="meta">Feb 2023 to Jun 2024</div>
+              <ul class="plain">
+                <li>Operated daily Kafka pipelines processing five to twenty million records with stable delivery and reduced batch time.</li>
+                <li>Introduced scheduling and pattern-based checks to cut manual monitoring and improve reliability.</li>
+                <li>Designed EtherSAM router testing that reduced effort and cost for a telecom client.</li>
+                <li>Resolved production issues and refactored legacy components to improve maintainability.</li>
+              </ul>
+            </article>
+
+            <div class="divider"></div>
+
+            <h2 id="education">Education</h2>
+            <p><strong>MSc Data Science</strong> at the University of Bristol. 2024 to 2025.</p>
+            <p><strong>BSc Information Technology</strong> at Amity University Noida. 2019 to 2022. CGPA 8.82 out of 10. Gold Medalist.</p>
+
+            <div class="divider"></div>
+
+            <h2 id="docs">Docs</h2>
+            <ul class="plain">
+              <li>Resume <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/Anshul%20Gupta%20Resume%20.pdf" download>download</a></li>
+              <li>Automated mining thesis <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/thesis_PM.pdf">open</a></li>
+              <li>MIR100HG multi-omics report <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/report_MO.pdf">open</a></li>
+              <li>Visual analytics study <a href="https://github.com/07anshul/MyPortfolio/blob/main/docs/report_VA.pdf">open</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <aside>
+          <div class="panel">
+            <h2 id="contact">Contact</h2>
+            <div class="contact">
+              <a href="mailto:ans2852000@gmail.com">ans2852000@gmail.com</a>
+              <a href="tel:+447909452401">+44 790 945 24 01</a>
+              <a href="tel:+447909452401">+91 810 773 99 59</a>
+            </div>
+            <div class="divider"></div>
+            <h2>Links</h2>
+            <div class="small">
+              GitHub <a href="https://github.com/07anshul" target="_blank" rel="noopener">07anshul</a> ·
+              LinkedIn <a href="https://www.linkedin.com/in/anshul-g-057ba7190/" target="_blank" rel="noopener">Anshul Gupta</a>
+            </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="yr"></span> Anshul Gupta
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
